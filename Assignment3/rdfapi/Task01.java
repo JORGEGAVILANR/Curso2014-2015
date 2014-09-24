@@ -37,9 +37,11 @@ public class Task01
 		model.write(System.out);
 
 		// ** TASK 1.1: Now write the model in Turtle form **
-		
+		model.write(System.out, "turtle");
 		
 		// ** TASK 1.2: Read a new model and merge it with the previous one **
-		String filename2 = "example2.rdf";
+		String filename2 = "example2.rdf";	
+		model.read(filename);
+		model.read(filename2);
 	}
 }
